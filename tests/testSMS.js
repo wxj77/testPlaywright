@@ -1,7 +1,4 @@
 const twilio = require('twilio');
-const accountSid = 'AC55f78fa0f950723a25e41648f3ce8d7e';
-const authToken = '6039b4a71348bd062e0c450f6868bedf';
-const client = twilio(accountSid, authToken);
 
 function getFirst6DigitsFromMessages() {
     return client.messages.list({ limit: 5 })

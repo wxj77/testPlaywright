@@ -7,13 +7,7 @@ const setAutoCompleteValue = require('./setAutoCompleteValue'); // Import the fu
 const continueToNextStep= require('./continueToNextStep')
 
 
-// Twilio account SID and Auth Token
-const accountSid = 'AC55f78fa0f950723a25e41648f3ce8d7e';
-const authToken = '6039b4a71348bd062e0c450f6868bedf';
-
-// Initialize Twilio client
-const client = twilio(accountSid, authToken);
-
+// 
 const fs = require('fs').promises;
 
 function getFirst6DigitsFromMessages() {
